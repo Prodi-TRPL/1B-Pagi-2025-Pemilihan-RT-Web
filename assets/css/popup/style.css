@@ -1,0 +1,178 @@
+.popupmenu-container,
+.popupexit-container,
+.popupdelete-container,
+.popupmanage-container,
+.popupconfirm-container,
+.popupalert-container
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1000;
+    overflow-y: auto;
+    transition: opacity 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    padding: 20px;
+}
+
+.popupmenu-container.open,
+.popupexit-container.open,
+.popupdelete-container.open,
+.popupmanage-container.open,
+.popupconfirm-container.open,
+.popupalert-container.open
+{
+    display: flex;
+    opacity: 1;
+    z-index: 1000;
+}
+
+.popupmenu,
+.popupexit,
+.popupdelete,
+.popupmanage,
+.popupconfirm,
+.popupalert {
+    display: none;
+    background-color: #fffbea;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    padding: 25px;
+    position: relative;
+    margin: auto;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.5s ease;
+}
+
+.popupmenu.open,
+.popupexit.open,
+.popupdelete.open,
+.popupmanage.open,
+.popupconfirm.open,
+.popupalert.open {
+    display: block;
+}
+
+.confirm {
+    background-color: #000;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.confirm:hover {
+    background-color: #444;
+}
+
+.cancel {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+    transition: all 0.3s ease;
+}
+
+.cancel:hover {
+    background-color: #f0f0f0;
+}
+
+.button-group {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    /* font-size: 16px; */
+    background-color: white;
+    outline: none;
+    width: 28%;
+}
+
+@media (max-width: 768px) {
+    .popupmenu {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .popupexit {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .popupdelete {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .popupma {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .button-group {
+        flex-direction: column-reverse;
+    }
+
+    .button-group button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .popupmenu {
+        padding: 15px;
+        max-width: 95%;
+    }
+
+    .popupexit {
+        padding: 15px;
+        max-width: 95%;
+    }
+
+    .popupdelete {
+        padding: 15px;
+        max-width: 95%;
+    }
+
+    .popupmanage {
+        padding: 15px;
+        max-width: 95%;
+    }
+}
+
+h4 {
+    opacity: 60%;
+    text-align: center;
+}
+
+.check-box-name {
+    background-color: #D9D9D9;
+    width: 100%;
+    display: block;
+    padding: 1px;
+    border-radius: 15px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

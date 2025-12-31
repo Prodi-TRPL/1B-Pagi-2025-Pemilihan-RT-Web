@@ -1,0 +1,146 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -260px;
+    width: 300vh;
+    /* background-color: #d3d3d3; */
+    overflow: hidden;
+    z-index: 10;
+    transition: 0.3s;
+    height: 100vh;
+    /* animation: fadeInSidebar 0.3s ease-in-out; */
+}
+
+.sidebar-container {
+    width: 250px;
+    height: 100vh;
+    background: #d3d3d3;
+}
+
+.sidebar.show {
+    visibility: visible;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.sidebar.hide {
+    visibility: hidden;
+    /* left: 0; */
+}
+@keyframes fadeInSidebar {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.sidebar-header {
+    background-color: #d3d3d3;
+    padding: 30px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #333;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.close-btn:hover {
+    background-color: #999;
+    transform: rotate(90deg);
+}
+
+.profile-icon {
+    width: 80px;
+    height: 80px;
+    background-image: url("/assets/img/logo-2.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.profile-text {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+
+.menu-item {
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 15px;
+    border-bottom: 1px solid #999;
+}
+
+
+
+.active-menu {
+    background-color: #c8c89e;
+    font-weight: 1000;
+    color: black;
+}
+
+.active-menu:hover {
+    background-color: #b8b88e;
+}
+
+.menu-item.beranda,
+.menu-item.sunting,
+.menu-item.superadmin {
+    background-color: #d3d3d3;
+    color: #333;
+}
+
+.menu-item.beranda:hover,
+.menu-item.sunting:hover,
+.menu-item.superadmin:hover {
+    background-color: #bbb;
+}
+
+.menu-item.keluar {
+    background-color: #d3d3d3;
+    color: #d9534f;
+    font-weight: 600;
+}
+
+.menu-item.keluar:hover {
+    background-color: #d9534f;
+    color: white;
+}
+
+.content-area {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hidden {
+    display: none;
+}

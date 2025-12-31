@@ -1,0 +1,24 @@
+<head>
+    <link rel="stylesheet" href="/assets/css/popup/style.css" />
+</head>
+
+<body>
+    <div class="popupconfirm-container">
+        <div class="popupconfirm" id="popupconfirm">
+            <h2 id="menu-type">Konfirmasi Pilihan</h2>
+
+            <form id="menuFormConfirm" action="../../assets/php/saveVote.php" method="post">
+                <h4>Apakah anda yakin ini memilih kandidat ini? Pilihan ini tidak dapat diubah setelah dikonfirmasi. </h4>
+                <div class="check-box-name">
+                    <h4>Pemilihan Ketua RT</h4>
+                    <h4>Kandidat yang dipilih: <span class="name-selected"></span></h4>
+                </div>
+                <div class="button-group">
+                    <button type="button" class="cancel" id="cancel">Batal</button>
+                    <button type="submit" class="confirm" id="saveVote">Simpan Perubahan</button>
+                </div>
+                <input type="hidden" id="nama_pilihan_kandidat" name="nama_pilihan_kandidat" value="">
+            </form>
+        </div>
+    </div>
+</body>

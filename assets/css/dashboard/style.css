@@ -1,0 +1,590 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-image: url("/assets/img/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Box area */
+.box-container {
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; */
+    padding: 20px;
+    width: 100%;
+}
+
+.card {
+    width: 100%;
+    max-width: 350px;
+    justify-self: center;
+    background-color: #ddd;
+    border: 2px solid #333;
+    /* border-radius: 10px; */
+    font-family: Arial, sans-serif;
+    transition: transform 0.3s ease;
+}
+
+
+.card-header {
+    position: relative;
+    background-color: #eee;
+    border-bottom: 1px solid #999;
+    min-height: 100px;
+    border-radius: 15px 15px 0 0;
+    overflow: hidden;
+}
+
+.card-header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #eee;
+    border-top: 1px solid #999;
+    border-radius: 0 0 15px 15px;
+}
+
+.card-footer .label {
+    font-weight: bold;
+    color: #333;
+}
+
+.card-footer .dots {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    cursor: pointer;
+}
+
+.card-footer .dots-container {
+    position: relative;
+}
+
+.card-footer .dot {
+    width: 4px;
+    height: 4px;
+    background-color: #333;
+    border-radius: 50%;
+}
+
+.card-footer .dots:hover .dot {
+    background-color: #41AE51;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+input[type="file"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+
+h2 {
+    text-align: center;
+    font-size: clamp(1.2rem, 4vw, 1.5rem);
+}
+
+label {
+    display: inline-block;
+    align-items: center;
+    width: 100%;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    gap: 5px;
+    font-size: clamp(0.9rem, 3vw, 1rem);
+}
+
+
+.error-icon {
+    font-size: 20px;
+    color: red;
+    display: none;
+}
+
+/* Upload Section */
+.upload-section {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.upload-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    font-size: clamp(0.9rem, 3vw, 1.1rem);
+    font-weight: bold;
+}
+
+.upload-area {
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: border-color 0.3s;
+    position: relative;
+}
+
+.upload-area:hover {
+    border-color: #6cd670;
+}
+
+.upload-icon {
+    font-size: clamp(1.5rem, 6vw, 2.5rem);
+    color: #aaa;
+    margin-bottom: 10px;
+}
+
+.upload-text {
+    color: #888;
+    font-size: clamp(0.8rem, 3vw, 1rem);
+}
+
+.file-info {
+    margin-top: 10px;
+    font-size: clamp(0.7rem, 2.5vw, 0.875rem);
+    color: #666;
+}
+
+
+.time-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.time-group input {
+    flex: 1;
+    min-width: 120px;
+}
+
+
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: clamp(0.8rem, 2.5vw, 0.9rem);
+    min-width: 100px;
+}
+
+.cancel {
+    background-color: #fff;
+    border: 2px solid #000;
+    transition: all 0.3s ease;
+}
+
+.cancel:hover {
+    background-color: #f0f0f0;
+}
+
+.confirm {
+    background-color: #000;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.confirm:hover {
+    background-color: #444;
+}
+
+.error-input {
+    border-color: red;
+}
+
+.add-button-container {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 9;
+}
+
+.add-button {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(145deg, #f0f0f0, #d9d9d9);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.8);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.add-button::before {
+    content: '';
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 40%;
+    height: 40%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.4), transparent);
+    border-radius: 50%;
+    filter: blur(10px);
+}
+
+.add-button:hover {
+    transform: scale(1.05);
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.4),
+        inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.add-button:active {
+    transform: scale(0.98);
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.3),
+        inset 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.plus-icon {
+    width: 35px;
+    height: 35px;
+    position: relative;
+    z-index: 1;
+}
+
+.plus-icon::before,
+.plus-icon::after {
+    content: '';
+    position: absolute;
+    background-color: #1a1a1a;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.plus-icon::before {
+    width: 35px;
+    height: 6px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.plus-icon::after {
+    width: 6px;
+    height: 35px;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+}
+
+.add-button:hover .plus-icon::before,
+.add-button:hover .plus-icon::after {
+    background-color: #41AE51;
+}
+
+.dropdown-menu {
+    display: none;
+    /* Tersembunyi secara default */
+    position: absolute;
+    right: 0;
+    top: 30px;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    overflow: hidden;
+    z-index: 10;
+    border: 1px solid #ddd;
+}
+
+/* Class untuk memunculkan menu */
+.dropdown-menu.show {
+    display: block;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 12px 16px;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    transition: background 0.2s;
+}
+
+.dropdown-menu .delete {
+    display: block;
+    padding: 12px 16px;
+    text-decoration: none;
+    color: #d9534f;
+    font-size: 14px;
+    transition: background 0.2s;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f5f5f5;
+}
+
+/* Gambar Preview (Hasil foto yang dipilih) */
+.preview-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    /* Sembunyikan default */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* Overlay Icon & Teks */
+.icon-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    /* Di atas gambar preview */
+    background-color: transparent;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+    color: #6c757d;
+}
+
+/* Icon SVG Camera */
+.camera-icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 8px;
+    fill: #6c757d;
+    /* Warna icon abu-abu */
+    transition: fill 0.3s ease;
+}
+
+/* LOGIKA HOVER & GAMBAR ADA */
+
+/* 1. Jika sudah ada gambar (.has-image), sembunyikan overlay icon */
+.photo-upload {
+    position: relative;
+    /* Penting untuk posisi absolute anak-anaknya */
+    width: 200px;
+    height: 250px;
+    /* Rasio pas foto */
+    margin: 0 auto;
+    /* Tengah */
+    background-color: #e9ecef;
+    border: 2px dashed #adb5bd;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+.photo-upload:hover {
+    border-color: #6cd670;
+}
+
+.photo-upload .icon-overlay {
+    opacity: 0;
+}
+
+/* 2. TAPI, jika di-hover saat ada gambar, munculkan lagi overlay dengan latar gelap */
+.photo-upload:hover .icon-overlay {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Gelap transparan */
+    color: white;
+    /* Teks jadi putih */
+}
+
+.photo-upload:hover .camera-icon {
+    fill: white;
+    /* Icon jadi putih */
+}
+
+.photo-upload input[type="file"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Media Queries untuk responsivitas */
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .box-container {
+        grid-template-columns: 1fr;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+
+
+
+    .add-button-container {
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .add-button {
+        width: 70px;
+        height: 70px;
+    }
+
+    .plus-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .plus-icon::before {
+        width: 30px;
+        height: 5px;
+    }
+
+    .plus-icon::after {
+        width: 5px;
+        height: 30px;
+    }
+
+
+}
+
+@media (max-width: 480px) {
+    main {
+        /* padding: 5px; */
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card-header {
+        min-height: 80px;
+    }
+
+    .time-group {
+        flex-direction: column;
+    }
+
+    .time-group input {
+        width: 100%;
+        min-width: unset;
+    }
+
+    .upload-area {
+        padding: 15px;
+    }
+
+    .add-button {
+        width: 60px;
+        height: 60px;
+    }
+
+    .plus-icon {
+        width: 25px;
+        height: 25px;
+    }
+
+    .plus-icon::before {
+        width: 25px;
+        height: 4px;
+    }
+
+    .plus-icon::after {
+        width: 4px;
+        height: 25px;
+    }
+
+    .add-button-container {
+        bottom: 15px;
+        right: 15px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .box-container {
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        padding: 30px;
+        gap: 25px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .box-container {
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    }
+
+    .add-button {
+        width: 100px;
+        height: 100px;
+    }
+
+    .plus-icon {
+        width: 45px;
+        height: 45px;
+    }
+
+    .plus-icon::before {
+        width: 45px;
+        height: 7px;
+    }
+
+    .plus-icon::after {
+        width: 7px;
+        height: 45px;
+    }
+}

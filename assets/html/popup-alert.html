@@ -1,0 +1,30 @@
+<head>
+    <link rel="stylesheet" href="/assets/css/popup/style.css" />
+</head>
+
+<body>
+    <div class="popupalert-container">
+        <div class="popupalert" id="popupalert">
+            <form id="menuForm">
+                <span id="text-alert">.</span>
+                <div class="button-group">
+                    <button type="button" class="confirm" id="ok" onclick="closeAlert()">OK</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script>
+    const popupalertContainer = document.querySelector('.popupalert-container');
+    const popupalert = document.getElementById('popupalert');
+    const textAlert = document.getElementById('text-alert');
+    const btnOkAlert = document.getElementById('ok');
+    function closeAlert() {
+        popupalertContainer.classList.remove('open');
+        popupalert.classList.remove('open');
+    }
+    function reloadPage() {
+        window.location.reload();
+    }
+
+</script>

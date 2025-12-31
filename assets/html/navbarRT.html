@@ -1,0 +1,43 @@
+<head>
+    <link rel="stylesheet" href="/assets/css/navbar/style.css" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-left">
+            <p class="nav-main" id="nav-main">Sunting Profil</p>
+            <p class="nav-sub">KlikPilih</p>
+        </div>
+    </nav>
+</body>
+<script>
+    switch (document.title) {
+        case "Beranda":
+            document.getElementById("nav-main").innerHTML = "Beranda";
+            break;
+        case "RT 01 - 2025":
+            document.getElementById("nav-main").innerHTML = "<a href='/admin/dashboard'>Beranda</a> / RT 01";
+            break;
+        case "RT 02 - 2025":
+            document.getElementById("nav-main").innerHTML = "<a href='/admin/dashboard'>Beranda</a> / RT 02";
+            break;
+        case "RT 03 - 2025":
+            document.getElementById("nav-main").innerHTML = "<a href='/admin/dashboard'>Beranda</a> / RT 03";
+            break;
+        case "RT 04 - 2025":
+            document.getElementById("nav-main").innerHTML = "<a href='/admin/dashboard'>Beranda</a> / RT 04";
+            break;
+        case "Sunting Profil":
+            document.getElementById("nav-main").innerHTML = "Sunting Profil";
+            break;
+        case "Sunting Profil Admin":
+            document.getElementById("nav-main").innerHTML = "Sunting Profil Admin";
+            break;
+        case "Tambah Profil Admin":
+            document.getElementById("nav-main").innerHTML = "Tambah Profil Admin";
+            break;
+        case "Kelola Admin":
+            document.getElementById("nav-main").innerHTML = "Kelola Admin";
+            break;
+    }
+</script>

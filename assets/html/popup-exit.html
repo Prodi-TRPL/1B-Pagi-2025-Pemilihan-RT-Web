@@ -1,0 +1,35 @@
+<head>
+    <link rel="stylesheet" href="/assets/css/popup/style.css" />
+</head>
+
+<body>
+    <div class="popupexit-container">
+        <div class="popupexit" id="popupexit">
+            <!-- <h2 id="menu-type">Edit Sesi</h2> -->
+
+            <form id="menuForm">
+                Apakah anda yakin ingin keluar?
+                <div class="button-group">
+                    <button type="button" class="cancel" id="cancel">Batal</button>
+                    <button type="button" class="confirm" id="logout" onclick="logoutbtn()">Konfirmasi Pilihan</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script>
+    const popupexitContainer = document.querySelector('.popupexit-container');
+    const popupexit = document.getElementById('popupexit');
+    const exitBtnClass = document.querySelectorAll('#exit-menu');
+    exitBtnClass.forEach(function (btn) {
+        btn.addEventListener('click', function (e) {
+            popupexitContainer.classList.toggle('open');
+            popupexit.classList.toggle('open');
+            if (popupexitContainer.classList.contains('open')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = 'auto';
+            }
+        });
+    });
+</script>

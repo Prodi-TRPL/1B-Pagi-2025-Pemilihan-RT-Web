@@ -1,0 +1,30 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #5DA96A;
+  padding: 10px 30px;
+}
+
+.nav-main {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 4px;
+}
+.nav-main a{
+  color: #1B596C;
+}
+
+.nav-sub {
+  margin: 0;
+  font-size: 24px;
+  color: #000;
+  margin-top: -5px;
+}
+
+.search-input {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}

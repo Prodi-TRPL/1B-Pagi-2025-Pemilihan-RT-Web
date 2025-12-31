@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-image: url("/assets/img/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.profil-icon {
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0px;
+  position: relative;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: clamp(0.8rem, 2.5vw, 0.9rem);
+  min-width: 100px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+
+.konten-utama {
+  display: flex;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  flex-direction: column;
+  padding: 25px;
+}
+
+.button-container {
+  margin: 30px;
+  display: flex;
+  justify-content: end;
+}
+
+.login-form {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.login-form-2 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container-form {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.login-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.login-group input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+.login-select {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.login-select select {
+  padding: 8px;
+  border-radius: 15px;
+  width: 80px;
+}
+
+.confirm {
+  background-color: #000;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.confirm:hover {
+  background-color: #444;
+}
+
+.delete {
+  background-color: #d9534f;
+  color: #fff;
+  border: 2px solid #c9302c; /* slightly darker red for good contrast */
+  transition: all 0.3s ease;
+}
+
+.delete:hover {
+  background-color: #c9302c;
+}
+
+.cancel {
+  background-color: #fff;
+  border: 2px solid #000;
+  transition: all 0.3s ease;
+}
+
+.cancel:hover {
+  background-color: #f0f0f0;
+}
+
+.button-group-2 {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin: 20px;
+  flex-wrap: wrap;
+}
+
+label {
+  display: inline-block;
+  align-items: center;
+  width: 100%;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  gap: 5px;
+  font-size: clamp(0.9rem, 3vw, 1rem);
+}
+
+.photo-upload {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed #aaa;
+  transition: all 0.3s ease;
+  margin-bottom: 10px;
+}
+
+
+
+.photo-upload img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photo-upload .camera-icon {
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.photo-upload:hover .camera-icon {
+  opacity: 1;
+}
+
+.photo-upload input[type="file"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+
+@media (max-width: 680px) {
+  .login-group{
+    width: 100%;
+  }
+}
+
+.login-group #login-name {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+

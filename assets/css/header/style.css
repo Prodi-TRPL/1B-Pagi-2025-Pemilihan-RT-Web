@@ -1,0 +1,31 @@
+/* Bagian atas */
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 20px;
+}
+
+.left-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.rw-icon {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.rw-text {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.right-header img {
+  width: 45px;
+  height: 45px;
+  background-color: #B8DEAD;
+  border-radius: 10px;
+}
