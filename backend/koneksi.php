@@ -1,7 +1,7 @@
 <?php
 $host = "localhost";
-$user = "klikpilih";
-$pass = "PBLkel3~!@#$%%$#@!~"; // Sesuaikan dengan password database Anda
+$user = "root";
+$pass = "";
 $db   = "klikpilih";
 $conn = mysqli_connect($host, $user, $pass, $db);
 
