@@ -16,86 +16,51 @@ Setiap pemilih diberikan **token unik** yang hanya dapat digunakan satu kali, se
   Tim yang telah berkontribusi dalam pengembangan projek ini:
 </p>
 
-<div style="
-  display:flex;
-  gap:16px;
-  flex-wrap:wrap;
-  background:#0d1117;
-  padding:16px;
-  border-radius:10px;
-  border:1px solid #30363d;
-">
+<table align="center">
+  <tr>
+    <td align="center">
+      <a href="https://github.com/USERNAME_GITHUB">
+        <img src="https://github.com/USERNAME_GITHUB.png" width="100px;" alt="Fawwaz Khairiy Wahid"/><br />
+        <sub><b>Fawwaz Khairiy Wahid<br>(Backend Developer)</b></sub>
+      </a>
+    </td>
 
-  <!-- Anggota 1 -->
-  <div style="
-    width:150px;
-    text-align:center;
-    background:#161b22;
-    border:1px solid #30363d;
-    border-radius:10px;
-    padding:12px;
-  ">
-    <img src="https://i0.wp.com/seds.org/wp-content/uploads/2020/02/placeholder.png?fit=1200%2C800&ssl=1&w=640" style="
-      width:100%;
-      height:140px;
-      object-fit:cover;
-      border-radius:8px;
-    ">
-    <p style="margin:10px 0 4px; font-weight:bold; color:#58a6ff;">
-      Fawwaz Khairiy Wahid
-    </p>
-    <p style="margin:0; font-size:13px; color:#8b949e;">
-      Backend Developer
-    </p>
-  </div>
+    <td align="center">
+      <a href="https://github.com/USERNAME_GITHUB">
+        <img src="https://github.com/USERNAME_GITHUB.png" width="100px;" alt="Muhammad Daffa Choir"/><br />
+        <sub><b>Muhammad Daffa Choir<br>(Business Analyst)</b></sub>
+      </a>
+    </td>
 
-  <!-- Anggota 2 -->
-  <div style="
-    width:150px;
-    text-align:center;
-    background:#161b22;
-    border:1px solid #30363d;
-    border-radius:10px;
-    padding:12px;
-  ">
-    <img src="https://i0.wp.com/seds.org/wp-content/uploads/2020/02/placeholder.png?fit=1200%2C800&ssl=1&w=640" style="
-      width:100%;
-      height:140px;
-      object-fit:cover;
-      border-radius:8px;
-    ">
-    <p style="margin:10px 0 4px; font-weight:bold; color:#58a6ff;">
-      Marsya Zainur Aminarti
-    </p>
-    <p style="margin:0; font-size:13px; color:#8b949e;">
-      Frontend Developer
-    </p>
-  </div>
+    <td align="center">
+      <a href="https://github.com/USERNAME_GITHUB">
+        <img src="https://github.com/USERNAME_GITHUB.png" width="100px;" alt="Muhammad Zadeq"/><br />
+        <sub><b>Muhammad Zadeq<br>(Business Analyst)</b></sub>
+      </a>
+    </td>
 
-  <!-- Anggota 3 -->
-  <div style="
-    width:150px;
-    text-align:center;
-    background:#161b22;
-    border:1px solid #30363d;
-    border-radius:10px;
-    padding:12px;
-  ">
-    <img src="https://i0.wp.com/seds.org/wp-content/uploads/2020/02/placeholder.png?fit=1200%2C800&ssl=1&w=640" style="
-      width:100%;
-      height:140px;
-      object-fit:cover;
-      border-radius:8px;
-    ">
-    <p style="margin:10px 0 4px; font-weight:bold; color:#58a6ff;">
-      Maisha Adila Zahra
-    </p>
-    <p style="margin:0; font-size:13px; color:#8b949e;">
-      UI / UX Designer
-    </p>
-  </div>
+    <td align="center">
+      <a href="https://github.com/USERNAME_GITHUB">
+        <img src="https://github.com/USERNAME_GITHUB.png" width="100px;" alt="Marsya Zainur Aminarti"/><br />
+        <sub><b>Marsya Zainur Aminarti<br>(Frontend Developer)</b></sub>
+      </a>
+    </td>
 
-</div>
+    <td align="center">
+      <a href="https://github.com/USERNAME_GITHUB">
+        <img src="https://github.com/USERNAME_GITHUB.png" width="100px;" alt="Syera Mardhatillah Deaz"/><br />
+        <sub><b>Syera Mardhatillah Deaz<br>(Frontend Developer)</b></sub>
+      </a>
+    </td>
+
+    <td align="center">
+      <a href="https://github.com/USERNAME_GITHUB">
+        <img src="https://github.com/USERNAME_GITHUB.png" width="100px;" alt="Maisha Adila Zahra"/><br />
+        <sub><b>Maisha Adila Zahra<br>(UI / UX Designer)</b></sub>
+      </a>
+    </td>
+  </tr>
+</table>
 
 ---
 
