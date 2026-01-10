@@ -8,31 +8,93 @@ Setiap pemilih diberikan **token unik** yang hanya dapat digunakan satu kali, se
 
 ## 👥 Tim & Role
 
-<div style="display: flex; flex-wrap: wrap; gap: 12px;">
-  <div style="border:1px solid #ddd; border-radius:8px; padding:10px 14px;">
-    <strong>Fawwaz Khairiy Wahid</strong><br>
-    <span style="color:#555;">Backend Developer</span>
+<h2 style="display:flex; align-items:center; gap:8px;">
+  👥 Anggota Tim PBL-TRPL104-B4
+</h2>
+
+<p style="color:#c9d1d9;">
+  Tim yang telah berkontribusi dalam pengembangan projek ini:
+</p>
+
+<div style="
+  display:flex;
+  gap:16px;
+  flex-wrap:wrap;
+  background:#0d1117;
+  padding:16px;
+  border-radius:10px;
+  border:1px solid #30363d;
+">
+
+  <!-- Anggota 1 -->
+  <div style="
+    width:150px;
+    text-align:center;
+    background:#161b22;
+    border:1px solid #30363d;
+    border-radius:10px;
+    padding:12px;
+  ">
+    <img src="https://i0.wp.com/seds.org/wp-content/uploads/2020/02/placeholder.png?fit=1200%2C800&ssl=1&w=640" style="
+      width:100%;
+      height:140px;
+      object-fit:cover;
+      border-radius:8px;
+    ">
+    <p style="margin:10px 0 4px; font-weight:bold; color:#58a6ff;">
+      Fawwaz Khairiy Wahid
+    </p>
+    <p style="margin:0; font-size:13px; color:#8b949e;">
+      Backend Developer
+    </p>
   </div>
-  <div style="border:1px solid #ddd; border-radius:8px; padding:10px 14px;">
-    <strong>Muhammad Daffa Choir</strong><br>
-    <span style="color:#555;">Business Analyst</span>
+
+  <!-- Anggota 2 -->
+  <div style="
+    width:150px;
+    text-align:center;
+    background:#161b22;
+    border:1px solid #30363d;
+    border-radius:10px;
+    padding:12px;
+  ">
+    <img src="https://i0.wp.com/seds.org/wp-content/uploads/2020/02/placeholder.png?fit=1200%2C800&ssl=1&w=640" style="
+      width:100%;
+      height:140px;
+      object-fit:cover;
+      border-radius:8px;
+    ">
+    <p style="margin:10px 0 4px; font-weight:bold; color:#58a6ff;">
+      Marsya Zainur Aminarti
+    </p>
+    <p style="margin:0; font-size:13px; color:#8b949e;">
+      Frontend Developer
+    </p>
   </div>
-  <div style="border:1px solid #ddd; border-radius:8px; padding:10px 14px;">
-    <strong>Muhammad Zadeq</strong><br>
-    <span style="color:#555;">Business Analyst</span>
+
+  <!-- Anggota 3 -->
+  <div style="
+    width:150px;
+    text-align:center;
+    background:#161b22;
+    border:1px solid #30363d;
+    border-radius:10px;
+    padding:12px;
+  ">
+    <img src="https://i0.wp.com/seds.org/wp-content/uploads/2020/02/placeholder.png?fit=1200%2C800&ssl=1&w=640" style="
+      width:100%;
+      height:140px;
+      object-fit:cover;
+      border-radius:8px;
+    ">
+    <p style="margin:10px 0 4px; font-weight:bold; color:#58a6ff;">
+      Maisha Adila Zahra
+    </p>
+    <p style="margin:0; font-size:13px; color:#8b949e;">
+      UI / UX Designer
+    </p>
   </div>
-  <div style="border:1px solid #ddd; border-radius:8px; padding:10px 14px;">
-    <strong>Marsya Zainur Aminarti</strong><br>
-    <span style="color:#555;">Frontend Developer</span>
-  </div>
-  <div style="border:1px solid #ddd; border-radius:8px; padding:10px 14px;">
-    <strong>Syera Mardhatillah Deaz</strong><br>
-    <span style="color:#555;">Frontend Developer</span>
-  </div>
-  <div style="border:1px solid #ddd; border-radius:8px; padding:10px 14px;">
-    <strong>Maisha Adila Zahra</strong><br>
-    <span style="color:#555;">UI / UX Designer</span>
-  </div>
+
 </div>
 
 ---
