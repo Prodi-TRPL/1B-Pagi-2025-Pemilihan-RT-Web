@@ -103,7 +103,7 @@ if (!$conn) {
 Import file database ke MySQL:
 
 ```bash
-mysql -u root -p nama_database < klikpilih.sql
+mysql -u root -p nama_database < klikpilih_db.sql
 ```
 
 ### 4. Jalankan Server
@@ -127,6 +127,7 @@ http://localhost/klikpilih
 ## 📌 Catatan
 
 - Pastikan ekstensi PHP yang dibutuhkan telah aktif (mysqli).
+- Login dengan SuperAdmin RW dengan kata sandi 123 (harap diganti kata sandinya setelah berhasil login)
 - Token pemilih bersifat **sekali pakai** dan tidak dapat digunakan ulang.
 - Sistem ini dirancang untuk kebutuhan pembelajaran dan implementasi skala lingkungan RT.
 
