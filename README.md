@@ -15,38 +15,38 @@ Setiap pemilih diberikan **token unik** yang hanya dapat digunakan satu kali, se
 <table align="center">
   <tr>
     <td align="center">
-      <a href="https://github.com/USERNAME_GITHUB">
-        <img src="https://github.com/USERNAME_GITHUB.png" width="100px;" alt="Fawwaz Khairiy Wahid"/><br />
+      <a>
+        <img src="http://terpalb25.web.id/wp-content/uploads/2026/01/DSF2299-scaled.jpg" width="100px;" alt="Fawwaz Khairiy Wahid"/><br />
         <sub><b>Fawwaz Khairiy Wahid<br>(Backend Developer)</b></sub>
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/USERNAME_GITHUB">
-        <img src="https://github.com/USERNAME_GITHUB.png" width="100px;" alt="Muhammad Daffa Choir"/><br />
+      <a>
+        <img src="http://terpalb25.web.id/wp-content/uploads/2026/01/DSF2329-scaled.jpg" width="100px;" alt="Muhammad Daffa Choir"/><br />
         <sub><b>Muhammad Daffa Choir<br>(Business Analyst)</b></sub>
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/USERNAME_GITHUB">
-        <img src="https://github.com/USERNAME_GITHUB.png" width="100px;" alt="Muhammad Zadeq"/><br />
+      <a>
+        <img src="http://terpalb25.web.id/wp-content/uploads/2026/01/DSF2339-scaled.jpg" width="100px;" alt="Muhammad Zadeq"/><br />
         <sub><b>Muhammad Zadeq<br>(Business Analyst)</b></sub>
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/USERNAME_GITHUB">
-        <img src="https://github.com/USERNAME_GITHUB.png" width="100px;" alt="Marsya Zainur Aminarti"/><br />
+      <a>
+        <img src="http://terpalb25.web.id/wp-content/uploads/2026/01/DSF2373-scaled.jpg" width="100px;" alt="Marsya Zainur Aminarti"/><br />
         <sub><b>Marsya Zainur Aminarti<br>(Frontend Developer)</b></sub>
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/USERNAME_GITHUB">
-        <img src="https://github.com/USERNAME_GITHUB.png" width="100px;" alt="Syera Mardhatillah Deaz"/><br />
+      <a>
+        <img src="http://terpalb25.web.id/wp-content/uploads/2026/01/DSF2390-scaled.jpg" width="100px;" alt="Syera Mardhatillah Deaz"/><br />
         <sub><b>Syera Mardhatillah Deaz<br>(Frontend Developer)</b></sub>
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/USERNAME_GITHUB">
-        <img src="https://github.com/USERNAME_GITHUB.png" width="100px;" alt="Maisha Adila Zahra"/><br />
+      <a>
+        <img src="http://terpalb25.web.id/wp-content/uploads/2026/01/DSF2384-scaled.jpg" width="100px;" alt="Maisha Adila Zahra"/><br />
         <sub><b>Maisha Adila Zahra<br>(UI / UX Designer)</b></sub>
       </a>
     </td>
