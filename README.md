@@ -24,35 +24,30 @@ Setiap pemilih diberikan **token unik** yang hanya dapat digunakan satu kali, se
         <sub><b>Fawwaz Khairiy Wahid<br>(Backend Developer)</b></sub>
       </a>
     </td>
-
     <td align="center">
       <a href="https://github.com/USERNAME_GITHUB">
         <img src="https://github.com/USERNAME_GITHUB.png" width="100px;" alt="Muhammad Daffa Choir"/><br />
         <sub><b>Muhammad Daffa Choir<br>(Business Analyst)</b></sub>
       </a>
     </td>
-
     <td align="center">
       <a href="https://github.com/USERNAME_GITHUB">
         <img src="https://github.com/USERNAME_GITHUB.png" width="100px;" alt="Muhammad Zadeq"/><br />
         <sub><b>Muhammad Zadeq<br>(Business Analyst)</b></sub>
       </a>
     </td>
-
     <td align="center">
       <a href="https://github.com/USERNAME_GITHUB">
         <img src="https://github.com/USERNAME_GITHUB.png" width="100px;" alt="Marsya Zainur Aminarti"/><br />
         <sub><b>Marsya Zainur Aminarti<br>(Frontend Developer)</b></sub>
       </a>
     </td>
-
     <td align="center">
       <a href="https://github.com/USERNAME_GITHUB">
         <img src="https://github.com/USERNAME_GITHUB.png" width="100px;" alt="Syera Mardhatillah Deaz"/><br />
         <sub><b>Syera Mardhatillah Deaz<br>(Frontend Developer)</b></sub>
       </a>
     </td>
-
     <td align="center">
       <a href="https://github.com/USERNAME_GITHUB">
         <img src="https://github.com/USERNAME_GITHUB.png" width="100px;" alt="Maisha Adila Zahra"/><br />
