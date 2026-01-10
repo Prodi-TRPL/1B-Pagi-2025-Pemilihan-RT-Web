@@ -8,10 +8,6 @@ Setiap pemilih diberikan **token unik** yang hanya dapat digunakan satu kali, se
 
 ## 👥 Tim & Role
 
-<h2 style="display:flex; align-items:center; gap:8px;">
-  👥 Anggota Tim PBL-TRPL104-B4
-</h2>
-
 <p style="color:#c9d1d9;">
   Tim yang telah berkontribusi dalam pengembangan projek ini:
 </p>
