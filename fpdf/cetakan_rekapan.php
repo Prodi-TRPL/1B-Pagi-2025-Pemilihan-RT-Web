@@ -11,16 +11,16 @@ $stmt = $conn->prepare($query);
 $stmt->bind_param("si", $rt_param_saved, $id_param_saved);
 $stmt->execute();
 $result = $stmt->get_result();
-if ($_SESSION['rt_panitia'] != "RW") {
-    if ($_SESSION['rt_panitia'] != $rt_param_saved) {
-        header("Location: ../admin/rt/index.php?rt=" . $_SESSION['saved_rt_panitia_param'] . "&id_sesi=" . $_SESSION['saved_id_sesi_param']);
-        exit;
-    }
-}
-if (mysqli_num_rows($result) == 0) {
-    header("Location: ../admin/rt/index.php?rt=" . $_SESSION['saved_rt_panitia_param'] . "&id_sesi=" . $_SESSION['saved_id_sesi_param']);
-    exit;
-}
+// if ($_SESSION['rt_panitia'] != "RW") {
+//     if ($_SESSION['rt_panitia'] != $rt_param_saved) {
+//         header("Location: ../admin/rt/index.php?rt=" . $_SESSION['saved_rt_panitia_param'] . "&id_sesi=" . $_SESSION['saved_id_sesi_param']);
+//         exit;
+//     }
+// }
+// if (mysqli_num_rows($result) == 0) {
+//     header("Location: ../admin/rt/index.php?rt=" . $_SESSION['saved_rt_panitia_param'] . "&id_sesi=" . $_SESSION['saved_id_sesi_param']);
+//     exit;
+// }
 $_SESSION['saved_rt_panitia_param'] = $rt_param_saved;
 $_SESSION['saved_id_sesi_param'] = $id_param_saved;
 
@@ -36,9 +36,9 @@ $stmt_info->bind_param("si", $rt_param_saved, $id_param_saved);
 $stmt_info->execute();
 $res_info = $stmt_info->get_result();
 
-if ($res_info->num_rows == 0) {
-    die("Data sesi tidak ditemukan.");
-}
+// if ($res_info->num_rows == 0) {
+//     die("Data sesi tidak ditemukan.");
+// }
 $infoSesi = $res_info->fetch_assoc();
 
 
