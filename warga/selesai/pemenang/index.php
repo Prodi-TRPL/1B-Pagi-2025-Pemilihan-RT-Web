@@ -99,6 +99,7 @@ while ($row = mysqli_fetch_assoc($result)) {
     <div class="button-container">
         <button class="exit-menu" onclick="handleExit()">Keluar</button>
         <button class="confirm" onclick="generate_rekapan()">Rekapan</button>
+        <button class="confirm" onclick="feedback()">Umpan Balik</button>
     </div>
 </body>
 <?php
@@ -177,6 +178,9 @@ echo "
 
                                                                     // 6. Bersihkan
                                                                     $stmt->close(); ?>';
+    }
+    function feedback() {
+        window.location.href = 'https://forms.gle/MCK7vCbNDUMtmJf46';
     }
 </script>
 
