@@ -21,7 +21,7 @@ if (mysqli_num_rows($result) == 0) {
     window.location.href = "/admin/kelolaadmin"
 </script>';
 }
-
+$rt___a = mysqli_fetch_assoc($result)['rt_panitia'];
 ?>
 <!DOCTYPE html>
 <html lang="id">
@@ -51,7 +51,7 @@ if (mysqli_num_rows($result) == 0) {
                 <div class="login-form">
                     <div class="login-group">
                         <label for="rt">RT</label>
-                        <input type="text" id="rt" name="rt" value="<?php echo mysqli_fetch_assoc($result)['rt_panitia']; ?>" readonly>
+                        <input type="text" id="rt" name="rt" value="<?php echo $rt___a; ?>" readonly>
                     </div>
                 </div>
                 <div class="login-form">
@@ -115,29 +115,11 @@ if (mysqli_num_rows($result) == 0) {
         popupdeleteContainer.classList.add('open');
         popupdelete.classList.add('open');
         document.body.style.overflow = 'hidden';
-        // if (confirm('Yakin Hapus?')) {
-        //     const formData = new FormData();
-        //     formData.append('rt', document.getElementById('rt').value);
-
-        //     // 4. Kirim ke Server menggunakan Fetch API
-        //     fetch('hapusAcc.php', { // <-- Ganti dengan nama file PHP pemroses kamu
-        //             method: 'POST',
-        //             body: formData
-        //         }).then(response => response.text()) // Ubah response server jadi text
-        //         .then(result => {
-        //             // 5. Apa yang terjadi jika sukses/selesai
-        //             window.location.href = "/admin/kelolaadmin"
-        //         });
-        // }
     }
     function closePopupDelete() {
         popupdeleteContainer.classList.remove('open');
         popupdelete.classList.remove('open');
         document.body.style.overflow = 'auto';
-    }
-    function confirmDelete() {
-        // Kirim form hapus
-        document.getElementById('menuForm').submit();
     }
     
 </script>
