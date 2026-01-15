@@ -11,8 +11,8 @@
                 Apakah anda yakin ingin menghapus akun rt?
                 <div class="button-group">
                     <button type="button" class="cancel" id="cancel" onclick="closePopupDelete()">Batal</button>
-                    <button type="submit" class="confirm" id="delete" onclick="confirmDelete()">Konfirmasi Pilihan</button>
-                    <input type="hidden" name="id" id="id" value=<?php echo $_GET['id'] ?>>
+                    <button type="submit" class="confirm" id="delete">Konfirmasi Pilihan</button>
+                    <input type="hidden" name="rt" id="id" value="<?php echo $rt___a; ?>">
                 </div>
             </form>
         </div>
